@@ -16,14 +16,14 @@ export default class About extends React.Component {
 
   incrementSecondsOnPageCounter() {
     this.setState({
-      secondsOnPage: this.state.secondsOnPage + 1
+      secondsOnPage: this.state.secondsOnPage - 1
     })
   }
 
   render() {
     return (
       <Layout>
-        <p>This is an About page. You've been looking at it for { this.state.secondsOnPage } minutes.</p>
+        <p>This is an About page. You've been looking at it for { this.state.secondsOnPage } seconds.</p>
       </Layout>
     )
   }
